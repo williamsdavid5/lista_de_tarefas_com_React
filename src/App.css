@@ -1,42 +1,102 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+    color: #ffffff;
+    background-image: url(img/dark-blue-dark-red-gradient-macos-05-10-2024-1728172228-hd-wallpaper.jpg);
+    background-position: center;
+    background-size: auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app {
+    max-width: 600px;
+    margin: 0 auto 300px;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h2 {
+    margin-bottom: 10px;
 }
 
-.card {
-  padding: 2em;
+p {
+    margin: 10px 0;
 }
 
-.read-the-docs {
-  color: #888;
+input {
+    box-sizing: border-box;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input {
+    background-color: black;
+    color: white;
+    border: solid 2px white;
+}
+
+select {
+    background-color: white;
+    font-weight: bold;
+    border: solid 2px white;
+}
+
+input,
+select {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.complete {
+    background-color: #00ff00;
+}
+
+.remove {
+    background-color: red;
+}
+
+.todo-list {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 2px white;
+}
+
+.todo {
+    background-color: black;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 3rem;
+}
+
+.filter-options div {
+    flex: 1 1 0;
+}
+
+.filter-options button {
+    padding: 5px;
 }
